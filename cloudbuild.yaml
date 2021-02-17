@@ -1,0 +1,8 @@
+# Flutter CD configuration file with Cloud build
+
+steps:
+
+# clone the latest source codes 
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone', 'https://github.com/Solution-Challenge/googreen.git']
+  dir: '/workspace'
