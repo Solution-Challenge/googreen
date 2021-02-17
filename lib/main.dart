@@ -112,7 +112,7 @@ class _MyAppState extends State<MyApp> {
   Widget widgetFooter() {
     return LoginFooter(
       logo: 'assets/logo_footer.png',
-      text: 'Built by a group of geeks. ',
+      text: 'Built by a group of geeks.',
       funFooterLogin: () {
         // develop what they want the footer to do when the user clicks
       },
