@@ -8,10 +8,7 @@ steps:
   dir: '/workspace'
   timeout: 500s
 
-- name: gcr.io/cloud-builders/git
-  args: ['clone', 'https://github.com/GoogleCloudPlatform/cloud-builders']
-
   # using flutter builder Docker image we have built previously to compile the repo
-- name: 'gcr.io/$PROJECT_ID/flutter'
+- name: 'gcr.io/cloud-builders/flutter'
   entrypoint: '/bin/bash'
   args: ['build.sh', 'googreen']
